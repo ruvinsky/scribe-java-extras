@@ -107,10 +107,26 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/FeedTheCoffers/scribe-googleoauth2</connection>
+    <connection>scm:git:https://github.com/FeedTheCoffers/scribe-googleoauth2.git</connection>
 		<developerConnection>scm:git:https://github.com/FeedTheCoffers/scribe-googleoauth2.git</developerConnection>
 		<url>https://github.com/FeedTheCoffers/scribe-googleoauth2</url>
 	</scm>
+
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://feedthecoffers.ci.cloudbees.com/</url>
+    <notifiers>
+      <notifier>
+        <type>mail</type>
+        <address>jimmi@feedthecoffers.org.uk</address>
+      </notifier>
+    </notifiers>
+  </ciManagement>
+
+  <issueManagement>
+    <system>Github Issues</system>
+    <url>https://github.com/FeedTheCoffers/web/issues</url>
+  </issueManagement>
 
 </project>
 
