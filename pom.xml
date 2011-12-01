@@ -112,26 +112,5 @@
 		<url>https://github.com/FeedTheCoffers/scribe-googleoauth2</url>
 	</scm>
 
-	<profiles>
-		<profile>
-			<id>proxy</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<systemPropertyVariables>
-								<http.proxyHost>localhost</http.proxyHost>
-								<http.proxyPort>3128</http.proxyPort>
-								<https.proxyHost>localhost</https.proxyHost>
-								<https.proxyPort>3128</https.proxyPort>
-							</systemPropertyVariables>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
-
 </project>
 
