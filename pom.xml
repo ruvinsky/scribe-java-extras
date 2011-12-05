@@ -7,8 +7,13 @@
 	<artifactId>scribe-googleoauth2</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<name>Google OAuth2 API for Scribe</name>
-
 	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
 
 	<dependencies>
 		<dependency>
@@ -107,26 +112,26 @@
 	</licenses>
 
 	<scm>
-    <connection>scm:git:https://github.com/FeedTheCoffers/scribe-googleoauth2.git</connection>
+		<connection>scm:git:https://github.com/FeedTheCoffers/scribe-googleoauth2.git</connection>
 		<developerConnection>scm:git:https://github.com/FeedTheCoffers/scribe-googleoauth2.git</developerConnection>
 		<url>https://github.com/FeedTheCoffers/scribe-googleoauth2</url>
 	</scm>
 
-  <ciManagement>
-    <system>Jenkins</system>
-    <url>https://feedthecoffers.ci.cloudbees.com/</url>
-    <notifiers>
-      <notifier>
-        <type>mail</type>
-        <address>jimmi@feedthecoffers.org.uk</address>
-      </notifier>
-    </notifiers>
-  </ciManagement>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>https://feedthecoffers.ci.cloudbees.com/</url>
+		<notifiers>
+			<notifier>
+				<type>mail</type>
+				<address>jimmi@feedthecoffers.org.uk</address>
+			</notifier>
+		</notifiers>
+	</ciManagement>
 
-  <issueManagement>
-    <system>Github Issues</system>
-    <url>https://github.com/FeedTheCoffers/web/issues</url>
-  </issueManagement>
+	<issueManagement>
+		<system>Github Issues</system>
+		<url>https://github.com/FeedTheCoffers/web/issues</url>
+	</issueManagement>
 
 </project>
 
