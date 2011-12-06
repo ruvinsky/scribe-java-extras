@@ -4,9 +4,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.org.feedthecoffers</groupId>
-	<artifactId>scribe-googleoauth2</artifactId>
+	<artifactId>scribe-java-extras</artifactId>
 	<version>0.1-SNAPSHOT</version>
-	<name>Google OAuth2 API for Scribe</name>
+	<name>scribe-java-extras</name>
+	<description>Extras for the Scribe Java OAuth library</description>
+
 	<packaging>jar</packaging>
 
 	<parent>
@@ -45,6 +47,20 @@
 			<plugin>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>3.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.4</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
@@ -112,14 +128,14 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/FeedTheCoffers/scribe-googleoauth2.git</connection>
-		<developerConnection>scm:git:https://github.com/FeedTheCoffers/scribe-googleoauth2.git</developerConnection>
-		<url>https://github.com/FeedTheCoffers/scribe-googleoauth2</url>
+		<connection>scm:git:https://github.com/FeedTheCoffers/scribe-java-extras.git</connection>
+		<developerConnection>scm:git:https://github.com/FeedTheCoffers/scribe-java-extras.git</developerConnection>
+		<url>https://github.com/FeedTheCoffers/scribe-java-extras</url>
 	</scm>
 
 	<ciManagement>
 		<system>Jenkins</system>
-		<url>https://feedthecoffers.ci.cloudbees.com/</url>
+		<url>https://feedthecoffers.ci.cloudbees.com/job/Scribe-Java-Extras/</url>
 		<notifiers>
 			<notifier>
 				<type>mail</type>
@@ -130,7 +146,7 @@
 
 	<issueManagement>
 		<system>Github Issues</system>
-		<url>https://github.com/FeedTheCoffers/web/issues</url>
+		<url>https://github.com/FeedTheCoffers/scribe-java-extras/issues</url>
 	</issueManagement>
 
 </project>
