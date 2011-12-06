@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.org.feedthecoffers</groupId>
 	<artifactId>scribe-java-extras</artifactId>
-	<version>0.1</version>
+	<version>0.2-SNAPSHOT</version>
 	<name>scribe-java-extras</name>
 	<description>Extras for the Scribe Java OAuth library</description>
 
